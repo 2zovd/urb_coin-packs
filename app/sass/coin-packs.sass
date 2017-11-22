@@ -78,17 +78,17 @@ body
 	max-width: 960px
 	margin: 0 auto
 	@include lg
-		padding: 0 3rem
+		padding: 3.5rem 3rem
 
 .coin-packs_page-title
 	font-family: $slab
 	font-weight: $bold
-	font-size: 3.4rem
 	margin-bottom: 3rem
 	h1
 		display: block
+		font-size: 3.4rem
 		text-align: center
-		padding-bottom: 3rem
+		padding-bottom: 2.4rem
 		position: relative
 		&:after
 			content: ''
@@ -99,6 +99,11 @@ body
 			background-color: #d8d8d8
 			width: 7rem
 			height: 0.3rem
+	@include lg
+		font-size: 3rem
+		margin-bottom: 2.5rem
+		h1
+			padding-bottom: 2.5rem
 
 .coin-packs_container
 	display: flex
@@ -117,7 +122,7 @@ body
 		justify-content: space-between
 	
 .coin-pack
-	padding: 4rem 3rem 2rem
+	padding: 3.7rem 3rem 2rem
 	width: 22.6rem
 	background-color: #fff
 	box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,.1)
@@ -171,7 +176,7 @@ body
 	font-weight: $regular
 	font-size: 2.4rem
 	text-transform: uppercase
-	margin-bottom: 3.8rem
+	margin-bottom: 2.9rem
 	strong
 		color: $green
 		font-weight: $regular
@@ -181,7 +186,7 @@ body
 	justify-content: center
 	flex-direction: row
 	align-items: center
-	margin-bottom: 3rem
+	margin-bottom: 2rem
 
 .coin-pack_coin-amount
 	display: block
@@ -219,7 +224,7 @@ body
 	font-size: 1.2rem
 	font-weight: $light
 	color: #777b7d
-	margin-bottom: 2.5rem
+	margin-bottom: 2rem
 	
 .coin-pack_button
 	display: block
