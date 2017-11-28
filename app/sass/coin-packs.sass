@@ -122,19 +122,24 @@ body
 		justify-content: space-between
 	
 .coin-pack
-	padding: 3.7rem 3rem 2rem
+	font-size: 1rem
+	padding: 3.7em 3em 2em
 	width: 22.6rem
 	background-color: #fff
-	box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,.1)
+	box-shadow: 0 0.2em 0.5em rgba(0,0,0,.1)
 	border-radius: $radius
-	margin: 0 0.7rem 1.5rem 0.7rem
+	margin: 0 0.7em 1.5em 0.7em
 	transition: $slow-transition
+	display: flex
+	justify-content: space-between
+	flex-direction: column
+	text-align: center
 	&:nth-child(3)
-		margin-right: 5rem
+		margin-right: 5em
 	&:hover
-		box-shadow: 0 0.2rem 1rem rgba(0,0,0,.2)
+		box-shadow: 0 0.2em 1em rgba(0,0,0,.2)
 	@include lg
-		margin: 0 0 2rem 0 !important 
+		margin: 0 0 2em 0 !important 
 		width: 22.5rem
 
 //first start 
@@ -151,6 +156,8 @@ body
 			justify-content: space-between
 			margin-left: 0
 			margin-right: 0
+		@include lg
+			flex-direction: column
 			.coin-pack_button
 				min-width: 1.6rem
 				display: inline-block
@@ -165,13 +172,11 @@ body
 			.first-start_cover
 				max-width: 20rem
 				.coin-pack_name
-					text-align: left
 					margin-bottom: 1.5rem
 
 	
 .coin-pack_name
 	display: block
-	text-align: center
 	font-family: $slab
 	font-weight: $regular
 	font-size: 2.4rem
@@ -220,7 +225,6 @@ body
 
 .coin-pack_description
 	display: block
-	text-align: center
 	font-size: 1.2rem
 	font-weight: $light
 	color: #777b7d
@@ -298,6 +302,7 @@ body
 		box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.2)
 	@include lg
 		width: 19%
+		font-size: 0.77rem
 
 .service-cost_img
 	display: block
@@ -318,7 +323,7 @@ body
 		background-position: 84.5% 0
 	&.icon-sprite-presentation
 		background-position: 100% 0
-
+	
 .service-cost_title
 	display: block
 	text-align: center
@@ -368,3 +373,7 @@ body
 		opacity: 1
 	img
 		display: block
+		width: 100%
+		height: auto
+	@include lg
+		margin: 0 1rem
