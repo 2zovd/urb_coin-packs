@@ -600,7 +600,9 @@ body {
   text-transform: uppercase; }
   @media only screen and (max-width: 576px) {
     .partners-title {
-      padding: 1rem; } }
+      padding: 1rem;
+      width: 17rem;
+      text-align: center; } }
 
 .partners-row {
   display: -webkit-box;
